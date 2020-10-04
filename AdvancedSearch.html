@@ -17,11 +17,12 @@
     .appbar{
       color: #d93025;
       font-size: 28px;
-
       padding: 25px;
       border-bottom-style: solid;
   	  border-color: #f1f1f1;
       border-width: thin;
+      overflow: hidden;
+      display:block;
     }
 
     .formtotal{
@@ -32,34 +33,35 @@
       vertical-align: baseline;
       }
 
-      .titulo{
+    .titulo{
         float: left;
-        display: inline-block;
+        display:block;
         min-width: 167 px;
         width: 16%;
         height: 42px;
         font-weight: 500;
-        vertical-align: middle;
+        padding: 25px;
+
       }
   </style>
 </head>
 
 <body>
   <div class="header">
-   <div>
-    <img height="30px" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png" align="middle">
-   </div>
+    <div>
+      <img height="30px" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png" align="middle">
+    </div>
     <div class="appbar">
       <label style="margin-left:10px">Advanced Search</label>
     </div>
   </div>
 
   <div class="formtotal">
-      <form action= "https://www.google.com/advanced_search" method="GET" name="f" _lpchecked="1"
-        <div class="titulo">
-          <span>Find pages with...</span>
-        </div>
-        
-
+    <form action= "https://www.google.com/advanced_search" method="GET" name="f" _lpchecked="1">
+      <div class="titulo">
+        <p>Find pages with...</p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
