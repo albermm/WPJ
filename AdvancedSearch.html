@@ -8,7 +8,6 @@
     .header {
       background: #f1f1f1;
       min-width:1002px;
-      position: absolute;
       height: 40px;
       width:100%;
       margin: 0px;
@@ -35,21 +34,21 @@
       vertical-align: baseline;
       }
 
-    .titulo{
+    .titulo-left{
+      float: left;
+      display:inline-block;
+      min-width: 167 px;
+      width: 16%;
+      height: 42px;
+      font-weight: 500;
+      }
+      .titulo-right{
         float: left;
-        display:block;
+        display:inline-block;
         min-width: 167 px;
         width: 16%;
         height: 42px;
         font-weight: 500;
-        padding: 25px;
-      }
-      .titulo-right{
-        float: left;
-        display: inline-block;
-        font-size: 13px;
-        padding-left: 5px;
-        vertical-align: middle;
       }
       .space{
         float: left;
@@ -62,18 +61,18 @@
 </head>
 
 <body>
-  <div class="header" position="absolute">
+  <div class="header">
     <div>
-      <img vertical-align="middle" height="30px" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png" align="middle">
+      <img vertical-align="middle" height="40px" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png">
     </div>
-    <div class="appbar">
-      <label style="margin-left:10px">Advanced Search</label>
-    </div>
+  </div>
+  <div class="appbar">
+    <label style="margin-left:10px">Advanced Search</label>
   </div>
 
   <div class="formtotal">
     <form action= "https://www.google.com/advanced_search" method="GET" name="f" _lpchecked="1">
-      <div class="titulo">
+      <div class="titulo-left">
         <p>Find pages with...</p>
       </div>
       <div class="space"></div>
